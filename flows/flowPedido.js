@@ -25,18 +25,21 @@ const flowPedido = addKeyword(['Realizar pedido'], { useRawText: true })
     }
   )
 
-  const flowAgregarMas = addKeyword(['_'], { useRawText: true })
-  .addAnswer(
-    '¿Desea agregar algo más?',
-    {
-      buttons: [
-        { body: 'Si' },
-        { body: 'Eso es todo' }
-      ]
-    },
-    null,
-    [flowPedidoMas, flowResumen]
-  )
+const flowAgregarMas = addKeyword(
+  [/.*/],             
+  { regex: true }      
+)
+.addAnswer(
+  '¿Desea agregar algo más?',
+  {
+    buttons: [
+      { body: 'Si' },
+      { body: 'Eso es todo' }
+    ]
+  },
+  null,
+  [ flowPedidoMas, flowResumen ]
+);
 
 
 module.exports = {

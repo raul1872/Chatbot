@@ -6,8 +6,8 @@
   pushName: 'Raul Fernandez'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_deb0bbce-0af0-41d0-862d-9099994f1787',
-  keyword: 'key_5f040c13-138d-495d-8f50-c6beb202d2d1',
+  ref: 'ans_e51e3a2d-5448-4aec-bbbb-74b71cf1a8df',
+  keyword: 'key_3c9d2373-9c87-4f70-975c-a3bc4b999eee',
   answer: 'Buenas! Como estás?',
   options: {
     media: null,
@@ -21,11 +21,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '2591e9935f11040007c47c52c3623c8d'
+  refSerialize: '3af11f64f8abfdd22d8e8bcc3689d4e0'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_ebd87e10-6383-4fc7-90a7-00702477a7e8',
-  keyword: 'ans_deb0bbce-0af0-41d0-862d-9099994f1787',
+  ref: 'ans_71743870-5e4d-4182-bc6e-5c53101e3bc6',
+  keyword: 'ans_e51e3a2d-5448-4aec-bbbb-74b71cf1a8df',
   answer: 'Que deseas hacer?',
   options: {
     media: null,
@@ -39,7 +39,7 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'c1b4b9361fa74ebd974992c4ca00e8e7'
+  refSerialize: '3dc041ae187b49df330e574f1aa494d4'
 }
 [handleMsg]:  {
   type: 'interactive',
@@ -51,8 +51,8 @@
   pushName: 'Raul Fernandez'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_7411e5e4-7c3c-44a0-84f9-7878b9a2933c',
-  keyword: 'key_27e53a4d-03ac-4fac-8eeb-82c10e2eaab9',
+  ref: 'ans_475c6efe-5a92-4e58-9075-a7fab2739f13',
+  keyword: 'key_cb105ccc-8cf0-4369-adab-3333c843794b',
   answer: 'Favor indicar el tipo de pedido.',
   options: {
     media: null,
@@ -66,7 +66,7 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '465df221d68048c0f4550e4dd4c2950f'
+  refSerialize: '54a9ac8a49ce4405dcea57c658c357e2'
 }
 [handleMsg]:  {
   type: 'interactive',
@@ -78,8 +78,8 @@
   pushName: 'Raul Fernandez'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_50772dc4-2631-4cdf-9c4c-c321dbeeee61',
-  keyword: 'key_3378b05d-82eb-4324-a462-7a57a98ab487',
+  ref: 'ans_25f26168-6a80-4ea7-a548-b4ef5633ced2',
+  keyword: 'key_e76095c0-31ca-4b74-81c1-959a65f20f61',
   answer: 'Desea factura?',
   options: {
     media: null,
@@ -93,7 +93,7 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '966a8aa38b33dcc06fc0d1ce177324f6'
+  refSerialize: '0812825d989bc068d4de17049ac7a967'
 }
 [handleMsg]:  {
   type: 'interactive',
@@ -105,8 +105,8 @@
   pushName: 'Raul Fernandez'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_b4787ef8-f435-495b-97fd-195fedf9a80f',
-  keyword: 'key_a1dcd492-52ff-46f9-a72f-dcf69376d7c0',
+  ref: 'ans_684e4ce8-5dca-4e5f-a4d7-a63be653c464',
+  keyword: 'key_fd6285aa-d61f-4052-a1be-a5be0564a4de',
   answer: 'Favor indicar los siguientes datos (en un solo mensaje):\r\n' +
     '\r\n' +
     '* Nombre y apellido\r\n' +
@@ -126,7 +126,7 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'df1d5096abe037581fa846df02b21769'
+  refSerialize: 'e7ecd4f42ff76a844eda22996f7b3701'
 }
 [handleMsg]:  {
   type: 'text',
@@ -145,8 +145,8 @@
   pushName: 'Raul Fernandez'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c45760e1-328b-4029-93a8-5ed9ae08dc4b',
-  keyword: 'key_739d61eb-a5ac-404f-820d-5094a3f567e6',
+  ref: 'ans_33c73023-0be6-4684-9206-38bbc92f6079',
+  keyword: 'key_06cb5562-e709-4c84-81cf-a19217fc979d',
   answer: '📝 ¿Qué deseas pedir?',
   options: {
     media: null,
@@ -160,7 +160,7 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '32cec3a6a7abc006cd7a43ef9d7557f0'
+  refSerialize: '3770ab0c4d8a021ae241fa6cd544a3d5'
 }
 [handleMsg]:  {
   type: 'text',
