@@ -1,0 +1,7 @@
+Favor indicar los siguientes datos (en un solo mensaje):
+
+* Nombre y apellido
+* RUC
+* Número de teléfono
+* Dirección
+* Referencia

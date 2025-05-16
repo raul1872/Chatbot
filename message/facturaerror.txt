@@ -1,0 +1,13 @@
+❌ Formato incorrecto. Debes enviar *5 líneas* con:
+* Nombre y apellido
+* RUC
+* Número de teléfono
+* Dirección
+* Referencia
+
+Por ejemplo:
+Juan Pérez
+1234567-1
++595981234567
+Av. Siempre Viva 123
+Entre Cerro y Palma

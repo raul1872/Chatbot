@@ -1,0 +1,214 @@
+[handleMsg]:  {
+  type: 'text',
+  from: '595986242987',
+  to: '15556407363',
+  body: 'Hola',
+  pushName: 'Raul Fernandez'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_65811cf7-8873-4d73-9763-58c953772de6',
+  keyword: 'key_29165667-17b6-4131-969f-3e85c3093f27',
+  answer: 'Buenas! Como estás?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '02a5c944f036b28591a9ceb948936b33'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7fc27850-29bf-4016-a564-a49dc4baf200',
+  keyword: 'ans_65811cf7-8873-4d73-9763-58c953772de6',
+  answer: 'Que deseas hacer?',
+  options: {
+    media: null,
+    buttons: [ [Object], [Object], [Object] ],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'ce0053eb2b5ab1bdae922b0106d37ee9'
+}
+[handleMsg]:  {
+  type: 'interactive',
+  from: '595986242987',
+  to: '15556407363',
+  body: 'Hacer un pedido',
+  title_button_reply: 'Hacer un pedido',
+  title_list_reply: undefined,
+  pushName: 'Raul Fernandez'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_76dbff16-259b-4c4f-98b4-3dac282019a0',
+  keyword: 'key_10ca9c05-bafe-450a-8977-12ac44f117f8',
+  answer: 'Favor indicar el tipo de pedido.',
+  options: {
+    media: null,
+    buttons: [ [Object], [Object] ],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '138336972762ef719e5db5c67782b8a7'
+}
+[handleMsg]:  {
+  type: 'interactive',
+  from: '595986242987',
+  to: '15556407363',
+  body: 'Delivery',
+  title_button_reply: 'Delivery',
+  title_list_reply: undefined,
+  pushName: 'Raul Fernandez'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b5b944d7-0e24-43f7-9b04-13da1b98ad90',
+  keyword: 'key_b5523968-b6fd-4b40-8ff2-3fa63d12782f',
+  answer: 'Desea factura?',
+  options: {
+    media: null,
+    buttons: [ [Object], [Object] ],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '35b3c8c526431a5946d0ceb17013fc1a'
+}
+[handleMsg]:  {
+  type: 'interactive',
+  from: '595986242987',
+  to: '15556407363',
+  body: 'Si',
+  title_button_reply: 'Si',
+  title_list_reply: undefined,
+  pushName: 'Raul Fernandez'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d9e1f260-c609-4f0d-89b4-43acd4f87792',
+  keyword: 'key_4375c662-1f46-4e1c-89f5-3e2d55f3e1a8',
+  answer: 'Favor indicar los siguientes datos (en un solo mensaje):\r\n' +
+    '\r\n' +
+    '* Nombre y apellido\r\n' +
+    '* RUC\r\n' +
+    '* Número de teléfono\r\n' +
+    '* Dirección\r\n' +
+    '* Referencia',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '57e75fe62a88893ae8545029c10669a4'
+}
+[handleMsg]:  {
+  type: 'text',
+  from: '595986242987',
+  to: '15556407363',
+  body: 'Raul fernandez\n5026646\n0986242987\nAlcorta 421\nPorton gris',
+  pushName: 'Raul Fernandez'
+}
+[handleMsg]:  {
+  type: 'interactive',
+  from: '595986242987',
+  to: '15556407363',
+  body: 'Realizar pedido',
+  title_button_reply: 'Realizar pedido',
+  title_list_reply: undefined,
+  pushName: 'Raul Fernandez'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_ea0fc95d-cc54-4bbf-8f9a-0d9cfc149ea3',
+  keyword: 'key_d566fad3-c4ee-40c7-8d58-8526426eaf4d',
+  answer: '📝 ¿Qué deseas pedir?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '3d5677772b3c8bebc72c322937abef0e'
+}
+[handleMsg]:  {
+  type: 'text',
+  from: '595986242987',
+  to: '15556407363',
+  body: 'Pizza',
+  pushName: 'Raul Fernandez'
+}
+[handleMsg]:  {
+  type: 'interactive',
+  from: '595986242987',
+  to: '15556407363',
+  body: 'Si',
+  title_button_reply: 'Si',
+  title_list_reply: undefined,
+  pushName: 'Raul Fernandez'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_8aac1c7f-14ad-4f92-b4b6-d43ab361e852',
+  keyword: 'key_561b84b8-2c3d-4f26-ab04-1182c2f6b800',
+  answer: '📝 Perfecto, ¿qué más deseas?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'd870cde880a6d1eb0c80b03d1f3296a5'
+}
+[handleMsg]:  {
+  type: 'text',
+  from: '595986242987',
+  to: '15556407363',
+  body: 'Lomito',
+  pushName: 'Raul Fernandez'
+}
+[handleMsg]:  {
+  type: 'interactive',
+  from: '595986242987',
+  to: '15556407363',
+  body: 'Eso es todo',
+  title_button_reply: 'Eso es todo',
+  title_list_reply: undefined,
+  pushName: 'Raul Fernandez'
+}

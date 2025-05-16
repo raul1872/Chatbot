@@ -1,0 +1,11 @@
+❌ Formato incorrecto. Debes enviar *4 líneas* con: 
+* Nombre y apellido
+* Número de teléfono
+* Dirección
+* Referencia
+
+Por ejemplo:
+Juan Pérez
++595981234567
+Av. Siempre Viva 123
+Entre Cerro y Palma
