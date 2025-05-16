@@ -6,32 +6,24 @@ const flowPedido = addKeyword(['Realizar pedido'], { useRawText: true })
     '📝 ¿Qué deseas pedir?',
     { capture: true },
     async (ctx, { state, gotoFlow }) => {
-      console.log('📥 Pedido recibido:', ctx.body);
-
-      let items = [];
-      try {
-        items = state.get('pedido') || [];
-      } catch {
-        items = [];
-      }
-
-      items.push(ctx.body.trim());
-      await state.update({ pedido: items });
-
-      return gotoFlow(flowAgregarMas);
+      const items = state.get('pedido') || []
+      items.push(ctx.body.trim())
+      await state.update({ pedido: items })
+      return gotoFlow(flowAgregarMas)
     }
-  );
+  )
 
   const flowPedidoMas = addKeyword(['Si'], { useRawText: true })
   .addAnswer(
     '📝 Perfecto, ¿qué más deseas?',
     { capture: true },
     async (ctx, { state, gotoFlow }) => {
-      const items = (state.get('pedido') || []).concat(ctx.body.trim());
-      await state.update({ pedido: items });
-      return gotoFlow(flowAgregarMas);
+      const items = state.get('pedido') || []
+      items.push(ctx.body.trim())
+      await state.update({ pedido: items })
+      return gotoFlow(flowAgregarMas)
     }
-  );
+  )
 
   const flowAgregarMas = addKeyword(['_'], { useRawText: true })
   .addAnswer(
@@ -44,12 +36,11 @@ const flowPedido = addKeyword(['Realizar pedido'], { useRawText: true })
     },
     null,
     [flowPedidoMas, flowResumen]
-  );
+  )
 
 
 module.exports = {
   flowPedido,
   flowPedidoMas,
   flowAgregarMas,
-  flowResumen
 };

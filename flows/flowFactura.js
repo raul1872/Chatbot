@@ -19,40 +19,42 @@ const facturaSi = addKeyword(['Si'], { useRawText: true })
   .addAnswer(
     msjfactura,
     { capture: true },
-    async (ctx, { fallBack, gotoFlow }) => {
+    async (ctx, { state, fallBack, gotoFlow }) => {
       const lines = ctx.body
         .split(/\r?\n/)
         .map(l => l.trim())
-        .filter(l => l !== '');
+        .filter(l => l !== '')
 
       if (lines.length === 5) {
-        return gotoFlow(flowMenu);
+        await state.update({ facturacion: lines })
+        return gotoFlow(flowMenu)
       } else {
-        return fallBack(
-          facturaerror
-        );
+        return fallBack(facturaerror)
       }
     }
-  );
+  )
 
-  const facturaNo = addKeyword(['No'], { useRawText: true })
+const facturaNo = addKeyword(['No'], { useRawText: true })
   .addAnswer(
     msjdelivery,
     { capture: true },
-    async (ctx, { fallBack, gotoFlow }) => {
+    async (ctx, { state, fallBack, gotoFlow }) => {
       const lines = ctx.body
         .split(/\r?\n/)
         .map(l => l.trim())
-        .filter(l => l !== '');
+        .filter(l => l !== '')
 
       if (lines.length === 4) {
-        return gotoFlow(flowMenu);
+        // guardamos datos de dirección
+        await state.update({ direccion: lines })
+        return gotoFlow(flowMenu)
       } else {
-        return fallBack(
-          deliveryerror
-        );
+        return fallBack(deliveryerror)
       }
     }
-  );
+  )
 
-  module.exports =  facturaSi, facturaNo ;
+module.exports = {
+  facturaSi,
+  facturaNo
+}

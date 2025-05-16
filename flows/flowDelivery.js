@@ -1,5 +1,5 @@
 const { addKeyword } = require('@bot-whatsapp/bot')
-const flowFactura = require('./flowFactura.js')
+const { facturaSi, facturaNo } = require('./flowFactura.js')
 
 const flowDelivery = addKeyword(['Delivery'])
     .addAnswer('Desea factura?', 
@@ -9,7 +9,7 @@ const flowDelivery = addKeyword(['Delivery'])
                 { body: 'No' }        
             ]
         }, null,
-        [flowFactura]
+    [ facturaSi, facturaNo ]
     )
 
 module.exports = flowDelivery;

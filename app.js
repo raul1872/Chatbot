@@ -9,12 +9,7 @@ const MongoAdapter = require('@bot-whatsapp/database/mongo')
 const flowPrincipal = require('./flows/flowPrincipal.js');
 const flowDelivery = require('./flows/flowDelivery.js');
 const flowMenu = require('./flows/flowMenu.js');
-const {
-flowPedido,
-    flowPedidoMas,
-    flowPedidoFin, flowAgregarMas
-  } = require('./flows/flowPedido');
-  const flowResumen  = require('./flows/flowResumen');
+const {flowPedido, flowAgregarMas} = require('./flows/flowPedido');
 
 const main = async () => {
     const adapterDB = new MongoAdapter({ 
